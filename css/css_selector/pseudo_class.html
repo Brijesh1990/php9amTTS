@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+        }
+        #logo 
+        {
+            width: 25%;
+            height: auto;
+            font-size: 40px;
+            margin-left: 2%;
+            color: white;
+        }
+        #menubar 
+        {
+            width: 75%;
+            height: auto;
+        }
+        #menubar ul li 
+        {
+            display: inline-block;
+            padding: 0px 25px;
+            font-size: 18px;
+        }
+
+        /* pseudo class */
+        #menubar a 
+        {
+           color: white;
+           text-decoration: none;
+           list-style-type: none;
+        }
+        #menubar a:hover 
+        {
+          color: red !important;
+        }
+        #menubar a:link 
+        {
+          color: black;
+        }
+        #menubar a:visited
+        {
+          color: white;
+        }
+        #menubar a:active
+        {
+        color: blue;
+        }
+
+        .active 
+        {
+            padding: 10px 10px;
+            background-color: antiquewhite;
+            color: black !important;
+        }
+        .dropdown 
+        {
+            width: auto;
+            height: auto;
+            position: relative;
+        }
+        .dropdown-menu 
+        {
+            width: 200px !important;
+            height: auto;
+            position: absolute;
+            display: none;
+            background-color: black;
+            color: white;
+            margin-left: 10%;
+            margin-top: 5% !important;
+        }
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- logo -->
+        <div id="logo">Flipkart</div>
+        <!-- menubar -->
+        <div id="menubar">
+            <ul>
+                <li class="dropdown"><a href="" class="active">Select Category</a>
+                <ul class="dropdown-menu">
+                    <li><a href="">Mens Items</a></li>
+                    <li><a href="">Womens Items</a></li>
+                    <li><a href="">Kids items</a></li>
+                    <li><a href="">OfferZones</a></li>
+                </ul>
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">Our Teams</a></li>
+                <li><a href="">Our Clients</a></li>
+                <li><a href="">Contactus</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
